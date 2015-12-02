@@ -1,0 +1,112 @@
+<html>
+
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<script>
+$(document).ready(function () {
+    $(".loading").fadeOut(2000);
+    $('#name').slideDown(2000);
+    $('#title').fadeIn(2000);
+    $('#button').fadeIn(2000);
+    $('#titletext').fadeIn(2000);
+    $('#explanation').fadeIn(2000);
+    $('#checkouti').fadeIn(2000);
+    $('#current').fadeIn(2500);
+    $('.unlocks').fadeIn(3000);
+    
+});
+</script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 600){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+</head>
+
+<body background="http://7-themes.com/data_images/out/1/6768920-abstract-ice-wallpaper.jpg"> 
+<div class="loading"></div>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Calvin<span>Dong</span></a></h1>
+
+		<nav>
+			<a href="#">Home</a>
+			<a href="#" class="selected">Blog</a>
+			
+			<a href="#">About</a>
+			
+			<a href="#">Contact</a>
+		</nav>
+
+	</div>
+
+</header>
+
+
+<div class="header-fixed-placeholder"></div>
+
+<div id="container">
+
+
+<div id="name" style="display:none;">
+	Hi. I'm Calvin.
+</div>
+
+<img src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/12105773_1489877598005951_4080136416319320127_n.jpg?oh=cf04087ea4e0d60428702b576113de63&oe=57212C71">
+
+<div id="titletext" style="display:none;">
+	I'm studying CS here at Berkeley, and I love using it for important causes.
+<div id="explanation" style="display:none">
+  You can check out my stuff below:
+</div>
+
+<div id="iconcontainer">
+<a href="https://docs.google.com/document/d/1bjtFoWaZIpVYbB0K-XPZ-AkyZ8ARFKQeNCfu0NTpOgA/edit?usp=sharing" target="_blank"><img src="assets/images/resumeicon.png" class="image"></a>
+
+<a href="http://www.github.com/calvind777" target="_blank"><img src="assets/images/githubicon.png" class="image"></a>
+<a href="http://www.linkedin.com/in/calvindong" target="_blank"><img src="assets/images/linkedinicon.png" class="image"></a>
+
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+</body>
+</html>

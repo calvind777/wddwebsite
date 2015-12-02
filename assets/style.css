@@ -1,0 +1,282 @@
+.header-fixed {
+    background-color:#292c2f;
+    box-shadow:0 1px 1px #ccc;
+    padding: 20px 40px;
+    height: 80px;
+    color: #ffffff;
+    box-sizing: border-box;
+    top:-100px;
+
+    -webkit-transition:top 0.3s;
+    transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*  The header placeholder. It is displayed when the header is fixed to the top of the
+    browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+    height: 80px;
+    display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+    float: left;
+    font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+    color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+    font:16px Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    float: right;
+}
+
+.header-fixed .header-limiter nav a{
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration:none;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+    opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+    color: #608bd2;
+    pointer-events: none;
+    opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+    padding: 10px 40px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+    display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+    line-height: 28px;
+    font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+    .header-fixed {
+        padding: 20px 0;
+        height: 75px;
+    }
+
+    .header-fixed .header-limiter h1 {
+        float: none;
+        margin: -8px 0 10px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .header-fixed .header-limiter nav {
+        line-height: 1;
+        float:none;
+    }
+
+    .header-fixed .header-limiter nav a {
+        font-size: 13px;
+    }
+
+    body.fixed .header-fixed {
+        display: none;
+    }
+
+}
+#contact{
+    margin:0 auto;
+}
+#name{
+    font-family: 'Droid Sans', sans-serif;
+    text-align:center;
+    font-size:40px;
+    color:white;
+    margin-bottom:40px;
+}
+.loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('http://i.stack.imgur.com/wD3lC.png') 50% 50% no-repeat white;
+}
+#container{
+    width:800px;
+    margin:auto;
+}
+#container > img{
+    opacity:0.7;
+    width:400px;
+    display:block;
+    margin:auto;
+}
+
+#titletext{
+    font-family: 'Droid Sans', sans-serif;
+    text-align:center;
+    font-size:20px;
+    color:Cornsilk;
+    padding:20px;
+    margin:20px auto;
+    width:75%;
+    
+}
+#explanation{
+    font-family: 'Droid Sans', sans-serif;
+    text-align:center;
+    font-size:20px;
+    color:Cornsilk;
+    padding:20px;
+    margin:20px auto;
+    width:65%;
+}
+#iconcontainer{
+    width:400px;
+    height:100px;
+    margin:0 auto;
+    background-color:SkyBlue;
+    border-radius: 1em;
+    opacity:0.7;
+    
+    
+}
+
+.image{
+    height:40%;
+    transition: .7s all;
+    border-radius:1em;
+    margin-top:30px;
+}
+.image:hover{
+    opacity:.3;
+}
+body{
+    margin:0;
+}
+
+h2 {
+    text-align:center;
+    margin: 20px;
+    color: #AFEEEE;
+    font-family: 'Droid Sans', sans-serif;
+    font-size:40px;
+}
+.name{
+    
+    font-family: 'Droid Sans', sans-serif;
+}
+.email{
+    
+    font-family: 'Droid Sans', sans-serif;
+}
+.web{
+
+font-family: 'Droid Sans', sans-serif;
+}
+.text{
+
+font-family: 'Droid Sans', sans-serif;
+}
+.submit{
+    
+    font-family: 'Droid Sans', sans-serif;
+}
+input, textarea {
+    margin:20px auto 20px;
+    display:block;
+    font-family: 'Droid Sans', sans-serif;
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;     
+}
+
+textarea {
+    font-family: 'Droid Sans', sans-serif;
+    width: 400px;
+    height: 150px;
+    max-width: 400px;
+    line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: 1px solid #C9C9C9;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px; 
+}
+
+.form label {
+    font-family: 'Droid Sans', sans-serif;
+    
+    color: RoyalBlue;
+}
+
+#contact > form > p.name > label{
+   color: #AFEEEE;
+}
+.displaytop{
+    text-align:center;
+    display:block;
+    margin:10px;
+}
+.submit input {
+   font-family: 'Droid Sans', sans-serif;
+    width: 100px; 
+    height: 40px;
+    background-color: #474E69; 
+    color: #FFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;     
+}
